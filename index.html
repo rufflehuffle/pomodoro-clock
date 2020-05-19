@@ -17,7 +17,7 @@
     <header>
         <nav>
             <p>Pomodoro Timer</p>
-            <div id="settings" class="nav-element">Settings</div>
+            <div id="settings" class="nav-element" onclick="toggleVisibility(settings, dark)">Settings</div>
             <div id="info" class="nav-element">More Information</div>
         </nav>
     </header>
@@ -45,6 +45,20 @@
         </div>
 
     </main>
+
+    <article id="settings-container">
+        <span id="close-settings" onclick="toggleVisibility(settings, dark)">×</span>
+        <p id="settings-header">Settings</p>
+        <div>
+            Dark Mode
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </article>
+
+    <div id="dark"></div>
 
     <script src="scripts/script.js"></script>
 </body>

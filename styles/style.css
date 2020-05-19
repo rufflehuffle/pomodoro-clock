@@ -87,9 +87,97 @@ button:hover {
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
-
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#dark {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+#settings-container {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    padding: 50px;
+    z-index: 1;
+}
+
+#close-settings {
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    cursor: pointer;
+    text-shadow: 0 0 3px red;
+}
+
+#settings-header {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* Lifted from W3 Schools CSS Toggle Switch */
+.switch {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+
+    /* Fills the entire box */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
 }
