@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Pomodoro Clock</title>
+    <title>Pomodoro Timer</title>
 
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -24,9 +24,9 @@
 
     <main>
         <div id="timer-selector">
-            <button id="btn-pomodoro">Pomodoro</button>
-            <button>Long Break</button>
-            <button>Short Break</button>
+            <button id="btn-pomodoro" onclick="changeToPomodoro()">Pomodoro</button>
+            <button onclick="changeToLong()">Long Break</button>
+            <button onclick="changeToShort()">Short Break</button>
         </div>
         <div id="timer">
             <img src="images/tomato.png" alt="" id="time-image">
@@ -39,9 +39,9 @@
             </div>
         </div>
         <div id="button-container">
-            <button id="btn-start">Start</button>
-            <button id="btn-stop">Stop</button>
-            <button>Reset</button>
+            <button id="btn-start" onclick="startTimer()">Start</button>
+            <button id="btn-stop" onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
         </div>
 
     </main>
