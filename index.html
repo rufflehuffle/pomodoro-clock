@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Pomodoro Clock</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>Pomodoro Timer</p>
+            <div id="settings" class="nav-element">Settings</div>
+            <div id="info" class="nav-element">More Information</div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="timer-selector">
+            <button id="btn-pomodoro">Pomodoro</button>
+            <button>Long Break</button>
+            <button>Short Break</button>
+        </div>
+        <div id="timer">
+            <img src="images/tomato.png" alt="" id="time-image">
+            <span id="time">25:00</span>
+            <div id="pomodoro-tracker">
+                <span id="pomodoro-1">⚪</span>
+                <span id="pomodoro-2">⚪</span>
+                <span id="pomodoro-3">⚪</span>
+                <span id="pomodoro-4">⚪</span>
+            </div>
+        </div>
+        <div id="button-container">
+            <button id="btn-start">Start</button>
+            <button id="btn-stop">Stop</button>
+            <button>Reset</button>
+        </div>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

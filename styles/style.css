@@ -1,0 +1,95 @@
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 3vh;
+    background-color: #5d5d5d;
+    color: white;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav p {
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.nav-element {
+    padding: 5px;
+    transition-duration: 0.1s;
+}
+
+.nav-element:hover {
+    cursor: pointer;
+    text-shadow: 0 0 3px white;
+}
+
+main {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+button {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #5d5d5d;
+    color: white;
+    width: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+    text-shadow: 0 0 3px white;
+}
+
+#btn-pomodoro {
+    background-color: #176fdc;
+    color: white;
+}
+
+#btn-start {
+    background-color: #009800;
+    color: white;
+}
+
+#btn-stop {
+    background-color: #c10202;
+    color: white;
+}
+
+#timer {
+    margin: 5vh 0 5vh 0;
+    display: inline-block;
+    position: relative;
+    font-family: 'Kameron', serif;
+}
+
+#time-image {
+    height: 50vh;
+    width: auto;
+}
+
+#pomodoro-tracker {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#time {
+    font-size: 50px;
+    background-color: #ffe63a;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
